@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Questionnaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        form {
+            max-width: 800px;
+            margin: auto;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Real Estate Questionnaire</h2>
+    <p>Please fill out the following details to help us understand your real estate business needs:</p>
+
+    <form action="/submit" method="post">
+        <label for="bread-butter">1. What’s your bread and butter in real estate? What type of properties are you after?</label>
+        <textarea id="bread-butter" name="bread_butter" rows="4" required></textarea>
+
+        <label for="markets-database">2. What markets are you playing in, and how many unique records are in your database right now?</label>
+        <textarea id="markets-database" name="markets_database" rows="4" required></textarea>
+
+        <label for="messaging-volume">3. What’s your messaging volume? How many messages do you think you’ll blast each month?</label>
+        <input type="text" id="messaging-volume" name="messaging_volume" required>
+
+        <label for="team-size">4. How big is your team? Do you have cold callers or an acquisition manager in place?</label>
+        <textarea id="team-size" name="team_size" rows="3" required></textarea>
+
+        <label for="platforms">5. Are you using top-sourcing platforms like Propstream, Batch Leads, or Lead Sherpa?</label>
+        <textarea id="platforms" name="platforms" rows="3" required></textarea>
+
+        <label for="skiptracing">6. What’s your skiptracing setup? And how much are you paying per hit?</label>
+        <textarea id="skiptracing" name="skiptracing" rows="3" required></textarea>
+
+        <label for="motivated-leads">7. How many motivated leads do you aim to generate every month, and what are your expectations for deals closed?</label>
+        <textarea id="motivated-leads" name="motivated_leads" rows="3" required></textarea>
+
+        <label for="exit-strategy">8. Let’s talk exit strategies—what are your go-to options?</label>
+        <textarea id="exit-strategy" name="exit_strategy" rows="3" required></textarea>
+
+        <label for="commission">9. What’s your average deal commission size?</label>
+        <input type="text" id="commission" name="commission" required>
+
+        <label for="scaling">10. The big question: Are you committed to scaling up? Would you pay every quarter for results?</label>
+        <textarea id="scaling" name="scaling" rows="3" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
